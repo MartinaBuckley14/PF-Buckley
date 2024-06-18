@@ -1,0 +1,841 @@
+/***************************************************************************************/
+/********************************** FONTS **********************************************/
+/***************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Dancing+Script:wght@400..700&family=Poiret+One&display=swap');
+
+/***************************************************************************************/
+/********************************** GENERAL ********************************************/
+/***************************************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faebd7;
+
+    display: grid;
+    grid-template-rows: repeat(1fr 2fr 1fr);
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer";
+    
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    grid-area: header;
+}
+
+h2 {
+    font-family: "Aguafina Script", "cursive";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.fondo-titulo {
+    background-color: rgba(244, 243, 242, 0.724);
+    backdrop-filter: blur(.5px);
+
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/***************************************************************************************/
+/********************************** HEADER *********************************************/
+/***************************************************************************************/
+
+section.cabezal {
+    grid-area: header;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+.logo-imagen {
+    display: flex;
+
+    height: 15rem;
+    padding: 0rem 3rem;
+}
+
+.navbar {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-display: auto;
+    border: 4px solid #304C89;
+
+    backdrop-filter: blur(1.5px);
+    align-self: stretch;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+}
+.nav-item:hover {
+    background-color:rgb(248, 229, 206);
+    color: black;
+    border: 4px solid #304C89;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: "Aguafina Script", "cursive";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120PX;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/***************************************************************************************/
+/********************************** INICIO *********************************************/
+/***************************************************************************************/
+
+#inicio {
+    background-image: url("../multimedia/mapafondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-inicio {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-inicio img {
+    height: 15rem;
+}
+
+.texto-inicio-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .7fr 2fr 2fr;
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo "
+    "   .        texto        .    "
+    "   .          .       globo   ";
+
+    height: 100%;
+    
+
+    background-color: antiquewhite;
+}
+
+.subtitulo-inicio {
+    grid-area: subtitulo;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding-left: 8%;
+    font-size: 70px;
+    width: 100%;
+}
+
+.texto-inicio {
+    font-family: "Poiret One", sans-serif;
+    font-size: 50px;
+
+    grid-area: texto;
+
+    display: flex;
+    align-items: start;
+
+}
+
+.globo-puzzle {
+    grid-area: globo;
+    padding-bottom: 3rem;
+}
+
+.globo-puzzle img {
+    min-height: 100%;
+}
+
+/***************************************************************************************/
+/********************************** PAISES *********************************************/
+/***************************************************************************************/
+
+#paises {
+    background-image: url("../multimedia/brujula.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.logo {
+    max-width: 100%;
+    align-self: flex-start;
+}
+
+.mapamundi {
+    max-width: 100%;
+    margin: 10px;
+    text-align: center;
+
+    padding: 2rem 0rem;
+}
+
+.paises { 
+    width: 100%;
+}
+
+.subtitulo-pais {
+    padding-top: 6rem;
+    padding-left: 4rem;
+}
+
+/***************************************************************************************/
+/********************************** IDIOMAS ********************************************/
+/***************************************************************************************/
+#diccionario {
+    height: 100vh;
+}
+#idioma {
+    background-image: url("../multimedia/diccionario.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.fondo-titulo-idiomas {
+    background-color: rgba(244, 243, 242, 0.521);
+    backdrop-filter: blur(.1px);
+
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-diccionario {
+    padding: 2rem 0rem;
+}
+
+.sudtitulo-diccionario {
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 70px;
+}
+.buscador {
+   padding-top: 4rem;
+   flex-grow: 1;
+}
+
+
+/***************************************************************************************/
+/********************************* FOTOS ***********************************************/
+/***************************************************************************************/
+
+#flash {
+    background-image: url("../multimedia/rollo-foto.jpg");
+    background-size: contain;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 6rem 6rem;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4rem;
+}
+
+.fotos > .pais {
+    width: 100%;
+    height: 80%;
+    
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    
+}
+
+
+/***************************************************************************************/
+/********************************* CONTACTO ********************************************/
+/***************************************************************************************/
+
+#contacto {
+    background-image: url("../multimedia/mensajeria.png");
+}
+
+.nosotros-titulo {
+    padding: 2rem 0rem;
+}
+
+.contacto {
+    padding: 6rem 0rem;
+    height: 100%;
+    font-size: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario-de-contacto {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 50vh;
+    height: 100%;
+}
+
+.contenedor-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 100%;
+    height: 100%;
+
+    gap: 3rem;
+}
+
+#contein {
+    display: flex;
+    flex-direction: column; 
+
+}
+
+#contein input {
+    height: 80px;
+    font-size: 40px;
+}
+
+.button-contein {
+    display: flex;
+    justify-content: right;
+}
+
+button {
+    font-size: 30px;
+}
+
+/***************************************************************************************/
+/************************************** FOOTER *****************************************/
+/***************************************************************************************/
+
+.media {
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 8rem;
+    gap: 2rem;
+}
+
+.media img {
+    max-height: 90px;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/***************************************************************************************/
+/********************************** MODELO RESPONSIVE **********************************/
+/***************************************************************************************/
+
+/*************TAMAÑO max*************/
+@media (min-width: 1999px) { 
+    
+    h1 {
+        font-size: 90px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 60px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 40px;
+        width: 70%;
+    }
+    .globo-puzzle {
+        align-self: end; 
+        padding-right: 3rem;
+    }
+    .globo-puzzle img {
+        height: 20rem;
+        
+    }
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 40%;
+    }
+    footer > p {
+        font-size: 20px;
+    }
+    
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 15rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 55px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    
+    /***************************************************************************************/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 70px;
+    }
+    
+}
+
+/*************TAMAÑO XXL*************/
+@media (max-width: 1999px) { 
+    /****************************INICIO*************************************/
+    h1 {
+        font-size: 85px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 60px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 40px;
+        width: 70%;
+    }
+    .globo-puzzle {
+        align-self: end; 
+        padding-right: 3rem;
+    }
+    .globo-puzzle img {
+        height: 20rem;
+        
+    }
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 40%;
+    }
+    footer > p {
+        font-size: 20px;
+    }
+    /**************************PAISES*****************************************/
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 20rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /****************************IDIOMAS**************************************/
+
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 60px;
+    }
+    /**************************FOTOS******************************************/
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4rem;
+    }
+    
+}
+
+/*************TAMAÑO XL*************/
+@media (max-width: 1199.98px) { 
+    h1 {
+        font-size: 70px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 40px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 25px;
+        width: 70%;
+    }
+    .globo-puzzle {
+        align-self: end; 
+        padding-right: 3rem;
+    }
+    .globo-puzzle img {
+        height: 15rem;
+        
+    }
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 37%;
+    }
+    footer > p {
+        font-size: 18px;
+    }
+    /***************************************************************************************/
+    
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 10rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    
+    /***************************************************************************************/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 50px;
+    }
+
+    .galeria {
+        padding: 3rem
+    }
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 4rem;
+    }
+    
+}
+
+/*************TAMAÑO LG*************/
+@media (max-width: 991.98px) { 
+    .logo-inicio img {
+        height: 10rem;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 40px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 25px;
+        width: 70%;
+    }
+    .globo-puzzle {
+        align-self: end; 
+        padding-right: 3rem;
+    }
+    .globo-puzzle img {
+        height: 13rem;
+        
+    }
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 35%;
+    }
+    footer > p {
+        font-size: 18px;
+    }
+    /***************************************************************************************/
+    
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 8rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    
+    /***************************************************************************************/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 40px;
+    }
+
+    .galeria {
+        padding: 2rem 6rem
+    }
+    .fotos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+}
+
+/*************TAMAÑO MD*************/
+@media (max-width: 767.98px) { 
+    .logo-inicio img {
+        height: 8rem;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 35px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 25px;
+        width: 70%;
+    }
+   
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 30%;
+    }
+    footer > p {
+        font-size: 15px;
+    }
+    /***************************************************************************************/
+    
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 6rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    
+    /***************************************************************************************/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 35px;
+    }
+
+}
+
+/*************TAMAÑO SM*************/
+@media (max-width: 575.98px) { 
+    .logo-inicio img {
+        height: 8rem;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    } 
+    .subtitulo-inicio {
+        font-size: 30px;
+        align-items: start;
+        padding-top: 2rem;
+    }
+    .texto-inicio {
+        font-size: 21px;
+        width: 70%;
+    }
+    .globo-puzzle {
+        align-self: end; 
+        padding-right: 3rem;
+    }
+    .globo-puzzle img {
+        height: 10rem;
+        
+    }
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 30%;
+    }
+    footer > p {
+        font-size: 15px;
+    }
+    /***************************************************************************************/
+    
+    .logo {
+        align-self: flex-start;
+    }
+    .logo-imagen {
+        height: 6rem;
+    }
+    #paises {
+        background-size: cover;
+    }
+    h2 {
+        font-size: 40px;
+        padding-top: 3rem;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    .mapamundi {
+        padding: 0;
+        margin: 0;
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+
+    /***************************************************************************************/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 30px;
+    }
+    
+}
