@@ -1,0 +1,45 @@
+.texto-inicio-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .7fr 2fr 2fr;
+    grid-template-areas: 
+    "subtitulo subtitulo subtitulo "
+    "   .        texto        .    "
+    "   .          .       globo   ";
+
+    height: 100%;
+    
+
+    background-color: $colorFondoInicio;
+
+    
+    .subtitulo-inicio {
+        grid-area: subtitulo;
+    
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    
+        padding-left: 8%;
+        font-size: 70px;
+        width: 100%;
+    }
+    .texto-inicio {
+        font-family: $fontPoiret;
+        font-size: 50px;
+    
+        grid-area: texto;
+    
+        display: flex;
+        align-items: start;
+    
+    }
+    .globo-puzzle {
+        grid-area: globo;
+        padding-bottom: 3rem;
+
+        .globo-puzzle img {
+            min-height: 100%;
+        }
+    }
+}

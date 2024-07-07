@@ -1,0 +1,566 @@
+/********************************** MODELO RESPONSIVE **********************************/
+
+
+/*************TAMAÑO max*************/
+@media (min-width: 1999px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 120PX;
+    }
+    h2 {
+        font-size: 60px;
+        padding-top: 3rem;
+        text-align: start;
+        white-space: nowrap;
+    }
+    .logo {
+        align-self: flex-start;
+
+        .logo-imagen {
+            height: 15rem;
+        }
+    }
+    /*============  INICIO =============*/
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .subtitulo-inicio {
+            font-size: 60px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 40px;
+            width: 70%;
+        }
+        .globo-puzzle {
+            align-self: end; 
+            padding-right: 3rem;
+
+            & img {
+                height: 28rem;
+                
+            }
+        }
+    } 
+    /*============  FOOTER =============*/
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 25%;
+    }
+    footer > p {
+        font-size: 20px;
+    }
+    /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 60px;
+    }
+    /*============  CONTACTO =============*/
+    .formulario-de-contacto {
+        font-size: 25px;
+        
+        width: 70%;
+        #contein input {
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+/*************TAMAÑO XXL*************/
+@media (max-width: 1999px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        white-space: nowrap;
+    }
+    .logo {
+        align-self: flex-start;
+        .logo-imagen {
+            height: 15rem;
+        }
+    }
+    /*============  INICIO =============*/
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .subtitulo-inicio {
+            font-size: 60px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 40px;
+            width: 70%;
+        }
+        .globo-puzzle {
+            align-self: end; 
+            padding-right: 3rem;
+
+            & img {
+                height: 24rem;
+                
+            }
+        }
+    } 
+    /*============  FOOTER =============*/ 
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 40%;
+    }
+    footer > p {
+        font-size: 20px;
+    }
+    /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 60px;
+    }
+    /*============  FOTOS =============*/
+    .galeria {
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 4rem;
+        }
+    }
+    /*============  CONTACTO =============*/
+    .contacto__titulo {
+        font-size: 60px;
+    }
+    .formulario-de-contacto {
+        font-size: 25px;
+        
+        width: 70%;
+        #contein input {
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+    
+}
+
+/*************TAMAÑO XL*************/
+@media (max-width: 1199.98px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 70px;
+    }
+    .logo {
+        align-self: flex-start;
+
+        .logo-imagen {
+            height: 11rem;
+        }
+    }
+    
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    /*============  INICIO =============*/
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .subtitulo-inicio {
+            font-size: 40px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 25px;
+            width: 70%;
+        }
+        .globo-puzzle {
+            align-self: end; 
+            padding-right: 3rem;
+
+            & img {
+                height: 20rem;
+                
+            }
+        }
+    } 
+    /*============  FOOTER =============*/
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 25%;
+    }
+    footer > p {
+        font-size: 18px;
+    }
+    /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        } 
+
+
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 50px;
+    }
+    /*============  FOTOS =============*/
+    .galeria {
+        padding: 3rem;
+
+        .fotos {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 4rem;
+        }
+    }
+    /*============  CONTACTO =============*/
+    .contacto__titulo {
+        font-size: 45px;
+    }
+    .formulario-de-contacto {
+        font-size: 25px;
+        
+        width: 70%;
+
+        #contein input {
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+}
+
+/*************TAMAÑO LG*************/
+@media (max-width: 991.98px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 65px;
+    }
+    .logo {
+        align-self: flex-start;
+        .logo-imagen {
+            height: 8rem;
+        }
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    /*============  INICIO =============*/
+    .logo-inicio img {
+        height: 10rem;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .subtitulo-inicio {
+            font-size: 40px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 25px;
+            width: 70%;
+        }
+        .globo-puzzle {
+            align-self: end; 
+            padding-right: 3rem;
+
+            & img {
+                height: 15rem;
+                
+            }
+        }
+    } 
+    /*============  FOOTER =============*/
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 25%;
+    }
+    footer > p {
+        font-size: 18px;
+    }
+   /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        } 
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 40px;
+    }
+    /*============  FOTOS =============*/
+    .galeria {
+        padding: 2rem 6rem;
+
+        .fotos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+
+            .pais {
+                border-radius: 5px;
+            }
+        }
+    }
+    /*============  CONTACTO =============*/
+    .contacto__titulo {
+        font-size: 45px;
+    }
+    .formulario-de-contacto {
+        font-size: 25px;
+        
+        width: 70%;
+        #contein input {
+            font-size: 20px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+}
+
+/*************TAMAÑO MD*************/
+@media (max-width: 767.98px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 60px;
+    }
+    .logo {
+        align-self: flex-start;
+        .logo-imagen {
+            height: 6rem;
+        }
+    }
+    h2 {
+        font-size: 45px;
+        padding-top: 3rem;
+        text-align: start;
+        text-wrap: nowrap;
+    }
+    /*============  INICIO =============*/
+    .logo-inicio img {
+        height: 8rem;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        .subtitulo-inicio {
+            font-size: 35px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 25px;
+            width: 70%;
+        }
+    } 
+    /*============  FOOTER =============*/
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 25%;
+    }
+    footer > p {
+        font-size: 15px;
+    }
+    /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 35px;
+    }
+    /*============  CONTACTO =============*/
+    .formulario-de-contacto {
+        font-size: 22px;
+        
+        margin: 10rem;
+        #contein input {
+            font-size: 18px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+
+}
+
+/*************TAMAÑO SM*************/
+@media (max-width: 575.98px) { 
+    /*============  GENERALES =============*/
+    h1 {
+        font-size: 55px;
+    }
+    .logo {
+        align-self: flex-start;
+        .logo-imagen {
+            height: 6rem;
+        }
+    }
+    h2 {
+        font-size: 40px;
+        padding-top: 3rem;
+        text-align: center;
+        text-wrap: nowrap;
+    }
+    /*============  INICIO =============*/
+    .logo-inicio img {
+        height: 8rem;
+    }
+    .texto-inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .subtitulo-inicio {
+            font-size: 30px;
+            align-items: start;
+            padding-top: 2rem;
+        }
+        .texto-inicio {
+            font-size: 21px;
+            width: 70%;
+        }
+        .globo-puzzle {
+            align-self: end; 
+            padding-right: 3rem;
+            & img {
+                height: 10rem;
+                
+            }
+        }
+    } 
+    /*============  FOOTER =============*/
+    .media {
+        padding: 0;
+        gap: 0;
+        max-height: 25%;
+    }
+    footer > p {
+        font-size: 15px;
+    }
+    /*============  PAISES =============*/
+    #paises {
+        width: 100%;
+        .mapamundi {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .paises {
+        display: flex;
+        flex-direction: column;
+       align-items: end;
+    }
+    /*============  IDIOMAS =============*/
+    .sudtitulo-diccionario {
+        text-align: center;
+        padding-top: 6rem;
+        font-size: 30px;
+    }
+    /*============  CONTACTO =============*/
+    .formulario-de-contacto {
+        font-size: 22px;
+        
+        margin: 4rem;
+        #contein input {
+            font-size: 18px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+}
