@@ -15,6 +15,10 @@
             position: relative;
             overflow: hidden;
 
+            border: 3px solid $colorBoreder;
+            border-radius: 10px;
+            box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.244);
+
             .pais {
                 width: 100%;
                 height: 100%;
@@ -22,6 +26,7 @@
                 object-fit: cover;
                 object-position: center;
                 padding: 0; 
+
             }
             .foto__overlay {
                 position: absolute;
