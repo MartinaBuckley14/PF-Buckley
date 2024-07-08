@@ -1,7 +1,12 @@
 .paises {
-    margin: 4rem;
-    .subtitulo-pais {
-        padding-top: 6rem;
+    padding: 3rem;
+    .contenedor-galeria {
+        gap: 3rem;
+
+        .card {
+            box-shadow: 10px 10px 10px $sombraGaleria;
+        }
     }
+    
 }
 

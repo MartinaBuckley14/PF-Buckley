@@ -50,7 +50,12 @@
     .media {
         padding: 0;
         gap: 0;
-        max-height: 25%;
+        max-height: 20%;
+
+        & img {
+            height: 60px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 20px;
@@ -75,14 +80,14 @@
     }
     /*============  CONTACTO =============*/
     .formulario-de-contacto {
-        font-size: 25px;
+        font-size: 27px;
         
         width: 70%;
         #contein input {
-            font-size: 20px;
+            font-size: 25px;
         }
         button {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
     
@@ -136,7 +141,12 @@
     .media {
         padding: 0;
         gap: 0;
-        max-height: 40%;
+        max-height: 20%;
+
+        & img {
+            height: 60px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 20px;
@@ -176,7 +186,7 @@
             font-size: 20px;
         }
         button {
-            font-size: 18px;
+            font-size: 20px;
         }
     }
     
@@ -232,7 +242,12 @@
     .media {
         padding: 0;
         gap: 0;
-        max-height: 25%;
+        max-height: 20%;
+
+        & img {
+            height: 50px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 18px;
@@ -269,7 +284,7 @@
     }
     /*============  CONTACTO =============*/
     .formulario-de-contacto {
-        font-size: 25px;
+        font-size: 20px;
         
         width: 70%;
 
@@ -333,7 +348,12 @@
     .media {
         padding: 0;
         gap: 0;
-        max-height: 25%;
+        max-height: 20%;
+
+        & img {
+            height: 45px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 18px;
@@ -372,14 +392,14 @@
     }
     /*============  CONTACTO =============*/
     .formulario-de-contacto {
-        font-size: 25px;
+        font-size: 17px;
         
         width: 70%;
         #contein input {
-            font-size: 20px;
+            font-size: 15px;
         }
         button {
-            font-size: 18px;
+            font-size: 16px;
         }
     }
 }
@@ -425,7 +445,12 @@
     .media {
         padding: 0;
         gap: 0;
-        max-height: 25%;
+        max-height: 20%;
+
+        & img {
+            height: 40px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 15px;
@@ -450,14 +475,14 @@
     }
     /*============  CONTACTO =============*/
     .formulario-de-contacto {
-        font-size: 22px;
+        font-size: 17px;
         
         margin: 10rem;
         #contein input {
-            font-size: 18px;
+            font-size: 15px;
         }
         button {
-            font-size: 18px;
+            font-size: 15px;
         }
     }
 
@@ -514,6 +539,11 @@
         padding: 0;
         gap: 0;
         max-height: 25%;
+
+        & img {
+            height: 35px;
+            align-self: end;
+        }
     }
     footer > p {
         font-size: 15px;
@@ -538,14 +568,14 @@
     }
     /*============  CONTACTO =============*/
     .formulario-de-contacto {
-        font-size: 22px;
+        font-size: 15px;
         
         margin: 4rem;
         #contein input {
-            font-size: 18px;
+            font-size: 12px;
         }
         button {
-            font-size: 18px;
+            font-size: 12px;
         }
     }
 }

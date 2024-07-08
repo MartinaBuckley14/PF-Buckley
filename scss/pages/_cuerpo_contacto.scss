@@ -12,7 +12,6 @@
         justify-content: center;
         align-items: center;
     
-        font-size: 30px;
 
         .contenedor-formulario {
             display: flex;
@@ -29,7 +28,6 @@
                 
                 & input {
                     height: 80px;
-                    font-size: 30px;
                     border-radius: 8px;
                 }
                 & textarea {
@@ -41,7 +39,6 @@
                 justify-content: right;
 
                 button {
-                    font-size: 30px;
                     padding-inline: 2rem;
                     border-radius: 5px;
                 }
