@@ -1,12 +1,20 @@
 .paises {
     padding: 3rem;
-    .contenedor-galeria {
-        gap: 3rem;
+    align-items: center;
 
-        .card {
-            box-shadow: 10px 10px 10px $sombraGaleria;
+    .subtitulo-pais {
+        padding-left: 4rem;
+    }
+
+    .card {
+        @extend %tarjetas;
+
+        .card_img {
+            @include foto_pais(410px)
         }
     }
+
     
 }
+
 
