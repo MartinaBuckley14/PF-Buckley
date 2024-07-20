@@ -1,5 +1,5 @@
 .paises {
-    padding: 3rem;
+    padding: 2rem;
     align-items: center;
 
     .subtitulo-pais {
@@ -7,7 +7,14 @@
     }
 
     .card {
-        @extend %tarjetas;    
+        @extend %tarjetas; 
+
+        .card-title {
+            margin-top: 1rem;
+        }
+        .card-text {
+            font-size: 20px;
+        }
     }
 }
 

@@ -558,8 +558,12 @@
     .paises {
         display: flex;
         flex-direction: column;
-       align-items: end;
+        align-items: end;
 
+        .subtitulo-pais {
+            padding-left: 0px;
+        }
+        
         
     }
     /*============  IDIOMAS =============*/

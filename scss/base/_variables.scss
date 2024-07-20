@@ -26,7 +26,7 @@ $sombraGaleria: 10px 10px 10px rgba(0, 0, 0, 0.244);
 =============================================*/             
 %tarjetas {
     height: 100%;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     &:hover {
         box-shadow: $sombraGaleria;
