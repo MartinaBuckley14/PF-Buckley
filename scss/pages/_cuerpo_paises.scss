@@ -7,14 +7,8 @@
     }
 
     .card {
-        @extend %tarjetas;
-
-        .card_img {
-            @include foto_pais(410px)
-        }
+        @extend %tarjetas;    
     }
-
-    
 }
 
 

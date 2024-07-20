@@ -405,7 +405,7 @@
 }
 
 /*************TAMAÑO MD*************/
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
     /*============  GENERALES =============*/
     h1 {
         font-size: 60px;
@@ -468,6 +468,7 @@
         flex-direction: column;
        align-items: end;
     }
+    
     /*============  IDIOMAS =============*/
     .sudtitulo-diccionario {
         text-align: center;
@@ -484,7 +485,6 @@
             font-size: 15px;
         }
     }
-
 }
 
 /*************TAMAÑO SM*************/
@@ -559,6 +559,8 @@
         display: flex;
         flex-direction: column;
        align-items: end;
+
+        
     }
     /*============  IDIOMAS =============*/
     .sudtitulo-diccionario {
