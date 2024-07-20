@@ -39,8 +39,7 @@
                 justify-content: right;
 
                 .boton {
-                    padding-inline: 2rem;
-                    border-radius: 5px;
+                    @extend %botones,  
                 }
             }
         }
