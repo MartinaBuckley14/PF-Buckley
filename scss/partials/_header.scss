@@ -90,6 +90,7 @@ header {
     =============================================*/ 
     #flash {
         @include headers (url("../multimedia/rollo-foto.jpg"),unset);
+
         background-size: contain;
     }
 

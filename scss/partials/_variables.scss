@@ -13,14 +13,19 @@ $fontTimes: 'Times New Roman', Times, serif;
 =                  COLORES                   =
 =============================================*/
 $fondoBody: #faebd7;
+$fondoBodyDark: rgb(1, 26, 67);
 $colorFondoInicio: antiquewhite;
 $colortransp: rgba(244, 243, 242, 0.724);
+$colortranspdark: rgb(1, 26, 0.724);
 $colorBoreder: #304C89;
 $colorHoverNav: rgb(248, 229, 206);
+$colorHoverNavdark: rgb(205, 205, 206);
 $colorOverlay: rgba(0, 0, 0, 0.475);
 $colorTextOverlay: white; 
 $sombraGaleria: 10px 10px 10px rgba(0, 0, 0, 0.244);
 $backgroundtooltip: rgba(0, 0, 0, 0.799);
+$detallesdark: white;
+
 /*=============================================
 =                PLACEHOLDER               =
 =============================================*/             
@@ -37,6 +42,35 @@ $backgroundtooltip: rgba(0, 0, 0, 0.799);
     border-color: none;
     padding-inline: 2rem;
     border-radius: 5px;
+}
+
+%modooscuro {
+    body {
+        background-color: $fondoBodyDark;
+    
+        .fondo-titulo {
+            background-color: $colortranspdark;
+            backdrop-filter: blur(.5px);
+        }
+        h1 {
+            color: $detallesdark;
+        }
+        header {
+            .navbar {
+                border: 4px solid $detallesdark;
+                
+        
+                .navbar-nav {
+        
+                    .nav-item:hover {
+                        background-color:$colorHoverNavdark;
+                        color: $detallesdark;
+                        border: 4px solid $detallesdark;
+                    } 
+                }
+            }
+        }
+    }
 }
 /*=============================================
 =                   MIXIN                   =
