@@ -1,0 +1,108 @@
+header {
+    grid-area: header;
+    
+
+    .navbar {
+        font-family: $fontTimes;
+        font-size: 40px;
+        font-display: auto;
+        border: 4px solid $colorBoreder;
+        
+        backdrop-filter: blur(1.5px);
+        align-self: stretch;
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-around;
+            
+            list-style: none;
+
+            .nav-item:hover {
+                background-color:$colorHoverNav;
+                color: black;
+                border: 4px solid $colorBoreder;
+                border-radius: 10px;
+            } 
+        }
+    }
+    /*=============================================
+    =              HEADER INICIO                 =
+    =============================================*/ 
+    #inicio {
+        @include headers(url("../multimedia/mapafondo.png"), no-repeat) ;
+
+        
+
+        .logo-inicio {
+            display: flex;
+            justify-content: center;
+
+            .logo-inicio img {
+                height: 15rem;
+            }
+        } 
+    }
+
+    /*=============================================
+    =              HEADER PAISES                 =
+    =============================================*/ 
+    #paises {
+        @include headers (url("../multimedia/brujula.jpg"), no-repeat) ;
+        
+
+        .logo {
+            max-width: 100%;
+            align-self: flex-start;
+        }
+        .mapamundi {
+            max-width: 100%;
+            margin: 10px;
+            text-align: center;
+            
+            padding: 2rem 0rem;
+        }
+    }
+
+    /*=============================================
+    =              HEADER IDIOMAS                 =
+    =============================================*/ 
+    #idioma {
+        @include headers (url("../multimedia/diccionario.png"), no-repeat) ;
+        
+
+        .fondo-titulo-idiomas {
+            background-color: $colortransp;
+            backdrop-filter: blur(.1px);
+            
+            width: 100%;
+                
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .titulo-diccionario {
+                padding: 2rem 0rem;
+            }
+        }
+    }
+    /*=============================================
+    =              HEADER FOTOS                 =
+    =============================================*/ 
+    #flash {
+        @include headers (url("../multimedia/rollo-foto.jpg"),unset);
+        background-size: contain;
+    }
+
+    /*=============================================
+    =              HEADER CONTACTO               =
+    =============================================*/ 
+    #contacto {
+        @include headers (url("../multimedia/mensajeria.png"),unset) ;
+        background-size: unset;
+
+        .nosotros-titulo {
+            padding: 2rem 0rem;
+        }
+    }
+}
+ 
